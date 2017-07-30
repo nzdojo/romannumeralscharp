@@ -13,7 +13,9 @@ namespace NumberSystems
             else if (arabicNumber == 2)
                 return "II";   
             else if (arabicNumber == 3)
-                return "III";                             
+                return "III";       
+            else if (arabicNumber == 4)
+                return "IV";                                       
 
             return string.Empty;
         } 
