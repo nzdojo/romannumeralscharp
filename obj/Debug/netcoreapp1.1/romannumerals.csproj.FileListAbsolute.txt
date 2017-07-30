@@ -1,0 +1,11 @@
+C:\Dev\RomanNumerals\romannumeralscharp\bin\Debug\netcoreapp1.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Dev\RomanNumerals\romannumeralscharp\bin\Debug\netcoreapp1.1\xunit.runner.utility.netstandard15.dll
+C:\Dev\RomanNumerals\romannumeralscharp\bin\Debug\netcoreapp1.1\xunit.runner.reporters.netstandard15.dll
+C:\Dev\RomanNumerals\romannumeralscharp\bin\Debug\netcoreapp1.1\romannumerals.deps.json
+C:\Dev\RomanNumerals\romannumeralscharp\bin\Debug\netcoreapp1.1\romannumerals.runtimeconfig.json
+C:\Dev\RomanNumerals\romannumeralscharp\bin\Debug\netcoreapp1.1\romannumerals.runtimeconfig.dev.json
+C:\Dev\RomanNumerals\romannumeralscharp\bin\Debug\netcoreapp1.1\romannumerals.dll
+C:\Dev\RomanNumerals\romannumeralscharp\bin\Debug\netcoreapp1.1\romannumerals.pdb
+C:\Dev\RomanNumerals\romannumeralscharp\obj\Debug\netcoreapp1.1\romannumerals.AssemblyInfo.cs
+C:\Dev\RomanNumerals\romannumeralscharp\obj\Debug\netcoreapp1.1\romannumerals.dll
+C:\Dev\RomanNumerals\romannumeralscharp\obj\Debug\netcoreapp1.1\romannumerals.pdb
