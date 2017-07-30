@@ -8,7 +8,16 @@ namespace NumberSystems
         [Fact]
         public void FromArabicZeroConvertsToNothing()
         {
-            Assert.True(false, "We don't have anything yet");
+            // 1. Setup          
+            var romanNumerals = new RomanNumerals();
+
+            // 2. Exercise
+            var result = romanNumerals.FromArabic(0);
+
+            // 3. Verify
+            Assert.True(string.Empty == result, "We don't have anything yet");
+
+            // 4. Cleanup
         }
     }
 }
