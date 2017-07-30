@@ -82,6 +82,22 @@ namespace NumberSystems
             Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
 
             // 4. Cleanup
-        }             
+        }     
+
+        [Fact]
+        public void FromArabicFiveConvertsToRomanNumeralsV()
+        {
+            // 1. Setup          
+            var romanNumerals = new RomanNumerals();
+            var expectedValue = "V";
+
+            // 2. Exercise
+            var result = romanNumerals.FromArabic(5);
+
+            // 3. Verify
+            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
+
+            // 4. Cleanup
+        }                
     }
 }
