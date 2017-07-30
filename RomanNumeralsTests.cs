@@ -25,12 +25,13 @@ namespace NumberSystems
         {
             // 1. Setup          
             var romanNumerals = new RomanNumerals();
+            var expectedValue = "I";
 
             // 2. Exercise
             var result = romanNumerals.FromArabic(1);
 
             // 3. Verify
-            Assert.True("1" == result, "We don't have anything yet");
+            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
 
             // 4. Cleanup
         }
