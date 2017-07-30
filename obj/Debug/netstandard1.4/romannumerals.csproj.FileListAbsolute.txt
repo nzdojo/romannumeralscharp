@@ -1,6 +1,0 @@
-C:\Dev\RomanNumerals\romannumeralscharp\bin\Debug\netstandard1.4\romannumerals.deps.json
-C:\Dev\RomanNumerals\romannumeralscharp\obj\Debug\netstandard1.4\romannumerals.AssemblyInfo.cs
-C:\Dev\RomanNumerals\romannumeralscharp\bin\Debug\netstandard1.4\romannumerals.dll
-C:\Dev\RomanNumerals\romannumeralscharp\bin\Debug\netstandard1.4\romannumerals.pdb
-C:\Dev\RomanNumerals\romannumeralscharp\obj\Debug\netstandard1.4\romannumerals.dll
-C:\Dev\RomanNumerals\romannumeralscharp\obj\Debug\netstandard1.4\romannumerals.pdb
