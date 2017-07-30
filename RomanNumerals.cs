@@ -10,6 +10,10 @@ namespace NumberSystems
                 return string.Empty;
             else if (arabicNumber == 1)
                 return "I";
+            else if (arabicNumber == 2)
+                return "II";   
+            else if (arabicNumber == 3)
+                return "III";                             
 
             return string.Empty;
         } 

@@ -35,5 +35,37 @@ namespace NumberSystems
 
             // 4. Cleanup
         }
+
+        [Fact]
+        public void FromArabicTwoConvertsToRomanNumeralsII()
+        {
+            // 1. Setup          
+            var romanNumerals = new RomanNumerals();
+            var expectedValue = "II";
+
+            // 2. Exercise
+            var result = romanNumerals.FromArabic(2);
+
+            // 3. Verify
+            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
+
+            // 4. Cleanup
+        }
+
+        [Fact]
+        public void FromArabicThreeConvertsToRomanNumeralsIII()
+        {
+            // 1. Setup          
+            var romanNumerals = new RomanNumerals();
+            var expectedValue = "III";
+
+            // 2. Exercise
+            var result = romanNumerals.FromArabic(3);
+
+            // 3. Verify
+            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
+
+            // 4. Cleanup
+        }        
     }
 }
