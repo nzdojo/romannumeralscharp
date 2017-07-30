@@ -19,5 +19,20 @@ namespace NumberSystems
 
             // 4. Cleanup
         }
+
+        [Fact]
+        public void FromArabicOneConvertsToRomanNumeralsI()
+        {
+            // 1. Setup          
+            var romanNumerals = new RomanNumerals();
+
+            // 2. Exercise
+            var result = romanNumerals.FromArabic(1);
+
+            // 3. Verify
+            Assert.True("1" == result, "We don't have anything yet");
+
+            // 4. Cleanup
+        }
     }
 }
