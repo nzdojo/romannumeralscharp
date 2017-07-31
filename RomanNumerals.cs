@@ -21,7 +21,9 @@ namespace NumberSystems
         {
             _arabicToRomanNumeralMap = new ArabicToRoman[] {
                     new ArabicToRoman(1000, "M"),
+                    new ArabicToRoman(900, "CM"),
                     new ArabicToRoman(100, "C"),
+                    new ArabicToRoman(90, "XC"),
                     new ArabicToRoman(50, "L"),
                     new ArabicToRoman(40, "XL"),
                     new ArabicToRoman(10, "X"),
