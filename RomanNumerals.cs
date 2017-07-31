@@ -43,6 +43,7 @@ namespace NumberSystems
             
             if (arabicNumber == 0)
                 return string.Empty;
+                
             var numberMapCounter = 0;
             while (arabicNumber > 0 && numberMapCounter < _arabicToRomanNumeralMap.Length) {
                 var mappingNumber = _arabicToRomanNumeralMap[numberMapCounter].ArabicNumber;
