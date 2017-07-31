@@ -75,5 +75,21 @@ namespace NumberSystems
             // 4. Cleanup
         }
 
+        [Fact]
+        [Trait("Type", "Combo")]
+        public void FromArabic88ConvertsToRomanNumeralsLXXXVIII()
+        {
+            // 1. Setup          
+            var expectedValue = "LXXXVIII";
+
+            // 2. Exercise
+            var result = _romanNumerals.FromArabic(88);
+
+            // 3. Verify
+            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue + " but got " + result);
+
+            // 4. Cleanup
+        }
+
       }
 }
