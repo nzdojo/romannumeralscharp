@@ -20,6 +20,7 @@ namespace NumberSystems
         public RomanNumerals()
         {
             _arabicToRomanNumeralMap = new ArabicToRoman[] {
+                    new ArabicToRoman(1000, "M"),
                     new ArabicToRoman(100, "C"),
                     new ArabicToRoman(50, "L"),
                     new ArabicToRoman(10, "X"),
