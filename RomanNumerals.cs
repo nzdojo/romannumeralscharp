@@ -11,6 +11,13 @@ namespace NumberSystems
             if (arabicNumber == 0)
                 return string.Empty;
 
+            while (arabicNumber > 5 && arabicNumber <= 9 && arabicNumber > 0) {
+                if (arabicNumber == 9) {
+                    romanNumber += "IX";
+                    arabicNumber -= 9;
+                } 
+            }
+
             while (arabicNumber <= 5 && arabicNumber > 0) {
                 if (arabicNumber == 5) {
                     romanNumber += "V";

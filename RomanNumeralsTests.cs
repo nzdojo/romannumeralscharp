@@ -98,6 +98,21 @@ namespace NumberSystems
             Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
 
             // 4. Cleanup
-        }                
+        }   
+
+        [Fact]
+        public void FromArabicNineConvertsToRomanNumeralsIX()
+        {
+            // 1. Setup          
+            var expectedValue = "IX";
+
+            // 2. Exercise
+            var result = _romanNumerals.FromArabic(9);
+
+            // 3. Verify
+            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
+
+            // 4. Cleanup
+        }                      
     }
 }
