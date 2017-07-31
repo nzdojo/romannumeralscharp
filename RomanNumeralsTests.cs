@@ -176,21 +176,6 @@ namespace NumberSystems
         }
 
         [Fact]
-        public void FromArabic19ConvertsToRomanNumeralsXIX()
-        {
-            // 1. Setup          
-            var expectedValue = "XIX";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(19);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
-        }
-
-        [Fact]
         public void FromArabic15ConvertsToRomanNumeralsXV()
         {
             // 1. Setup          
