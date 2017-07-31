@@ -175,5 +175,20 @@ namespace NumberSystems
             // 4. Cleanup
         }
 
+        [Fact]
+        public void FromArabic20ConvertsToRomanNumeralsXX()
+        {
+            // 1. Setup          
+            var expectedValue = "XX";
+
+            // 2. Exercise
+            var result = _romanNumerals.FromArabic(20);
+
+            // 3. Verify
+            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
+
+            // 4. Cleanup
+        }
+
     }
 }
