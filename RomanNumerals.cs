@@ -18,7 +18,7 @@ namespace NumberSystems
                 } else if (arabicNumber == 9) {
                     romanNumber += "IX";
                     arabicNumber -= 9;
-                } else if (arabicNumber == 5) {
+                } else if (arabicNumber >= 5 && arabicNumber < 9) {
                     romanNumber += "V";
                     arabicNumber -= 5;
                 } else if (arabicNumber == 4) {
