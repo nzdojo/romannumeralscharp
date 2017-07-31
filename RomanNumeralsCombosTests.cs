@@ -10,22 +10,14 @@ namespace NumberSystems
         [Trait("Type", "Combo")]
         public void FromArabic150ConvertsToRomanNumeralsCL()
         {
-            // 1. Setup          
-            var expectedValue = "CL";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(150);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue + " but got " + result);
-
-            // 4. Cleanup
+            exerciseAndVerify(150, "CL");
         }
 
        [Fact]
         [Trait("Type", "Combo")]
         public void FromArabic11ConvertsToRomanNumeralsXI()
         {
+            exerciseAndVerify(11, "XI");
             // 1. Setup          
             var expectedValue = "XI";
 
