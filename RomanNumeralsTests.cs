@@ -130,5 +130,20 @@ namespace NumberSystems
             // 4. Cleanup
         } 
 
+        [Fact]
+        public void FromArabic6ConvertsToRomanNumeralsVI()
+        {
+            // 1. Setup          
+            var expectedValue = "VI";
+
+            // 2. Exercise
+            var result = _romanNumerals.FromArabic(6);
+
+            // 3. Verify
+            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
+
+            // 4. Cleanup
+        } 
+
     }
 }
