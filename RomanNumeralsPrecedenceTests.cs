@@ -28,6 +28,22 @@ namespace NumberSystems
         }
 
         [Fact]
+        [Trait("Type", "Precedence")]
+        public void FromArabic49ConvertsToRomanNumeralsXLIX()
+        {
+            // 1. Setup          
+            var expectedValue = "XLIX";
+
+            // 2. Exercise
+            var result = _romanNumerals.FromArabic(49);
+
+            // 3. Verify
+            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue + " but got " + result);
+
+            // 4. Cleanup
+        }
+
+        [Fact]
         [Trait("Type", "Precedence")] 
         public void FromArabic1990ConvertsToRomanNumeralsMCMXC()
         {
