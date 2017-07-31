@@ -5,14 +5,19 @@ namespace NumberSystems
 {
     public class RomanNumeralsTests
     {
+        RomanNumerals _romanNumerals;
+        public RomanNumeralsTests()
+        {
+            _romanNumerals = new RomanNumerals();
+        }
+
         [Fact]
         public void FromArabicZeroConvertsToNothing()
         {
             // 1. Setup          
-            var romanNumerals = new RomanNumerals();
 
             // 2. Exercise
-            var result = romanNumerals.FromArabic(0);
+            var result = _romanNumerals.FromArabic(0);
 
             // 3. Verify
             Assert.True(string.Empty == result, "We don't have anything yet");
@@ -24,11 +29,10 @@ namespace NumberSystems
         public void FromArabicOneConvertsToRomanNumeralsI()
         {
             // 1. Setup          
-            var romanNumerals = new RomanNumerals();
             var expectedValue = "I";
 
             // 2. Exercise
-            var result = romanNumerals.FromArabic(1);
+            var result = _romanNumerals.FromArabic(1);
 
             // 3. Verify
             Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
@@ -40,11 +44,10 @@ namespace NumberSystems
         public void FromArabicTwoConvertsToRomanNumeralsII()
         {
             // 1. Setup          
-            var romanNumerals = new RomanNumerals();
             var expectedValue = "II";
 
             // 2. Exercise
-            var result = romanNumerals.FromArabic(2);
+            var result = _romanNumerals.FromArabic(2);
 
             // 3. Verify
             Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
@@ -56,11 +59,10 @@ namespace NumberSystems
         public void FromArabicThreeConvertsToRomanNumeralsIII()
         {
             // 1. Setup          
-            var romanNumerals = new RomanNumerals();
             var expectedValue = "III";
 
             // 2. Exercise
-            var result = romanNumerals.FromArabic(3);
+            var result = _romanNumerals.FromArabic(3);
 
             // 3. Verify
             Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
@@ -72,11 +74,10 @@ namespace NumberSystems
         public void FromArabicFourConvertsToRomanNumeralsIV()
         {
             // 1. Setup          
-            var romanNumerals = new RomanNumerals();
             var expectedValue = "IV";
 
             // 2. Exercise
-            var result = romanNumerals.FromArabic(4);
+            var result = _romanNumerals.FromArabic(4);
 
             // 3. Verify
             Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
@@ -88,11 +89,10 @@ namespace NumberSystems
         public void FromArabicFiveConvertsToRomanNumeralsV()
         {
             // 1. Setup          
-            var romanNumerals = new RomanNumerals();
             var expectedValue = "V";
 
             // 2. Exercise
-            var result = romanNumerals.FromArabic(5);
+            var result = _romanNumerals.FromArabic(5);
 
             // 3. Verify
             Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
