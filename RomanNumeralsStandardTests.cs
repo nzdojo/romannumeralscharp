@@ -1,5 +1,4 @@
 using Xunit;
-using NumberSystems;
 
 namespace NumberSystems
 {

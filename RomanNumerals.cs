@@ -5,7 +5,7 @@ namespace NumberSystems
 {
     public class RomanNumerals
     {
-        private class ArabicToRoman {
+        private struct ArabicToRoman {
             public ArabicToRoman(int arabicNumber, string romanNumber) {
                 this.ArabicNumber = arabicNumber;
                 this.RomanNumber = romanNumber;
@@ -14,7 +14,7 @@ namespace NumberSystems
             public string RomanNumber {get;}
         }
 
-        ArabicToRoman[] _arabicToRomanNumeralMap;
+        private ArabicToRoman[] _arabicToRomanNumeralMap;
 
         public RomanNumerals()
         {
@@ -37,7 +37,6 @@ namespace NumberSystems
                     new ArabicToRoman(1, "I")
                 };
         }
-
         public string FromArabic(int arabicNumber) 
         {
             var romanNumber = string.Empty;
