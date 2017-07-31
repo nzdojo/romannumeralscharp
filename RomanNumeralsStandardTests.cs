@@ -9,226 +9,92 @@ namespace NumberSystems
         [Fact]
         public void FromArabicZeroConvertsToNothing()
         {
-            // 1. Setup          
+            exerciseAndVerify(0, string.Empty);
 
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(0);
-
-            // 3. Verify
-            Assert.True(string.Empty == result, "We don't have anything yet");
-
-            // 4. Cleanup
         }
 
         [Fact]
         public void FromArabicOneConvertsToRomanNumeralsI()
         {
-            // 1. Setup          
-            var expectedValue = "I";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(1);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
+            exerciseAndVerify(1, "I");
         }
 
         [Fact]
         public void FromArabicTwoConvertsToRomanNumeralsII()
         {
-            // 1. Setup          
-            var expectedValue = "II";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(2);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
+            exerciseAndVerify(2, "II");
         }
 
         [Fact]
         public void FromArabicThreeConvertsToRomanNumeralsIII()
         {
-            // 1. Setup          
-            var expectedValue = "III";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(3);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
+            exerciseAndVerify(3, "III");
         }    
 
         [Fact]
         public void FromArabicFourConvertsToRomanNumeralsIV()
         {
-            // 1. Setup          
-            var expectedValue = "IV";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(4);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
+            exerciseAndVerify(4, "IV");
         }     
 
         [Fact]
         public void FromArabicFiveConvertsToRomanNumeralsV()
         {
-            // 1. Setup          
-            var expectedValue = "V";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(5);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
+            exerciseAndVerify(5, "V");
         }   
 
         [Fact]
         public void FromArabicNineConvertsToRomanNumeralsIX()
         {
-            // 1. Setup          
-            var expectedValue = "IX";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(9);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
+            exerciseAndVerify(9, "IX");
         }   
 
         [Fact]
         public void FromArabicTenConvertsToRomanNumeralsX()
         {
-            // 1. Setup          
-            var expectedValue = "X";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(10);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
+            exerciseAndVerify(10, "X");
         } 
 
         [Fact]
         public void FromArabic6ConvertsToRomanNumeralsVI()
         {
-            // 1. Setup          
-            var expectedValue = "VI";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(6);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
+            exerciseAndVerify(6, "VI");
         } 
 
         [Fact]
         public void FromArabic7ConvertsToRomanNumeralsVII()
         {
-            // 1. Setup          
-            var expectedValue = "VII";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(7);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
+            exerciseAndVerify(7, "VII");
         }
 
         [Fact]
         public void FromArabic8ConvertsToRomanNumeralsVIII()
         {
-            // 1. Setup          
-            var expectedValue = "VIII";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(8);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
+            exerciseAndVerify(8, "VIII");
         }
 
         [Fact]
         public void FromArabic15ConvertsToRomanNumeralsXV()
         {
-            // 1. Setup          
-            var expectedValue = "XV";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(15);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
+            exerciseAndVerify(15, "XV");
         }
 
        [Fact]
         public void FromArabic50ConvertsToRomanNumeralsL()
         {
-            // 1. Setup          
-            var expectedValue = "L";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(50);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
+            exerciseAndVerify(50, "L");
         }
 
        [Fact]
         public void FromArabic100ConvertsToRomanNumeralsC()
         {
-            // 1. Setup          
-            var expectedValue = "C";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(100);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
+            exerciseAndVerify(100, "C");
         }
 
        [Fact]
         public void FromArabic1000ConvertsToRomanNumeralsM()
         {
-            // 1. Setup          
-            var expectedValue = "M";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(1000);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
+            exerciseAndVerify(1000, "M");
         }
-
     }
 }
