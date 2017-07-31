@@ -176,21 +176,6 @@ namespace NumberSystems
         }
 
         [Fact]
-        public void FromArabic20ConvertsToRomanNumeralsXX()
-        {
-            // 1. Setup          
-            var expectedValue = "XX";
-
-            // 2. Exercise
-            var result = _romanNumerals.FromArabic(20);
-
-            // 3. Verify
-            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
-
-            // 4. Cleanup
-        }
-
-        [Fact]
         public void FromArabic19ConvertsToRomanNumeralsXIX()
         {
             // 1. Setup          
@@ -228,6 +213,21 @@ namespace NumberSystems
 
             // 2. Exercise
             var result = _romanNumerals.FromArabic(50);
+
+            // 3. Verify
+            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
+
+            // 4. Cleanup
+        }
+
+       [Fact]
+        public void FromArabic100ConvertsToRomanNumeralsC()
+        {
+            // 1. Setup          
+            var expectedValue = "C";
+
+            // 2. Exercise
+            var result = _romanNumerals.FromArabic(100);
 
             // 3. Verify
             Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
