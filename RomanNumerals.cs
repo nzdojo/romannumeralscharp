@@ -51,7 +51,8 @@ namespace NumberSystems
                 } else if (arabicNumber >= mappingNumber) {
                     romanNumber += _arabicToRomanNumeralMap[numberMapCounter].RomanNumber;
                     arabicNumber -= mappingNumber;
-                    numberMapCounter++;                    
+                    if (arabicNumber < mappingNumber)
+                        numberMapCounter++;                    
                 } else {
                     numberMapCounter++;   
                 }
