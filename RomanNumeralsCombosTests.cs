@@ -3,13 +3,8 @@ using NumberSystems;
 
 namespace NumberSystems
 {
-    public class RomanNumeralsCombosTests
+    public class RomanNumeralsCombosTests : RomanNumeralsTests
     {
-        RomanNumerals _romanNumerals;
-        public RomanNumeralsCombosTests()
-        {
-            _romanNumerals = new RomanNumerals();
-        }
 
         [Fact]
         [Trait("Type", "Combo")]

@@ -1,15 +1,9 @@
 using Xunit;
-using NumberSystems;
 
 namespace NumberSystems
 {
-    public class RomanNumeralsMultiplesTests
+    public class RomanNumeralsMultiplesTests : RomanNumeralsTests
     {
-        RomanNumerals _romanNumerals;
-        public RomanNumeralsMultiplesTests()
-        {
-            _romanNumerals = new RomanNumerals();
-        }
 
         [Fact]
         [Trait("Type", "Multiple")]

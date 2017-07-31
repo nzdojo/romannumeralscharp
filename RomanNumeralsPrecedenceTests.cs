@@ -3,13 +3,8 @@ using NumberSystems;
 
 namespace NumberSystems
 {
-    public class RomanNumeralsPrecedenceTests
+    public class RomanNumeralsPrecedenceTests : RomanNumeralsTests
     {
-        RomanNumerals _romanNumerals;
-        public RomanNumeralsPrecedenceTests()
-        {
-            _romanNumerals = new RomanNumerals();
-        }
 
         [Fact]
         [Trait("Type", "Precedence")] 
