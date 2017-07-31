@@ -145,5 +145,35 @@ namespace NumberSystems
             // 4. Cleanup
         } 
 
+        [Fact]
+        public void FromArabic7ConvertsToRomanNumeralsVII()
+        {
+            // 1. Setup          
+            var expectedValue = "VII";
+
+            // 2. Exercise
+            var result = _romanNumerals.FromArabic(7);
+
+            // 3. Verify
+            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
+
+            // 4. Cleanup
+        }
+
+        [Fact]
+        public void FromArabic8ConvertsToRomanNumeralsVIII()
+        {
+            // 1. Setup          
+            var expectedValue = "VIII";
+
+            // 2. Exercise
+            var result = _romanNumerals.FromArabic(8);
+
+            // 3. Verify
+            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
+
+            // 4. Cleanup
+        }
+
     }
 }
