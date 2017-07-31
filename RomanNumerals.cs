@@ -12,7 +12,10 @@ namespace NumberSystems
                 return string.Empty;
 
             while (arabicNumber > 0) {
-                if (arabicNumber >= 10) {
+                if (arabicNumber >= 50) {
+                    romanNumber += "L";
+                    arabicNumber -= 50;
+                } else if (arabicNumber >= 10) {
                     romanNumber += "X";
                     arabicNumber -= 10;
                 } else if (arabicNumber == 9) {
