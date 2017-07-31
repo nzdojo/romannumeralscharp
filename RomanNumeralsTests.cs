@@ -113,6 +113,22 @@ namespace NumberSystems
             Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
 
             // 4. Cleanup
-        }                      
+        }   
+
+        [Fact]
+        public void FromArabicTenConvertsToRomanNumeralsX()
+        {
+            // 1. Setup          
+            var expectedValue = "X";
+
+            // 2. Exercise
+            var result = _romanNumerals.FromArabic(10);
+
+            // 3. Verify
+            Assert.True(expectedValue == result, "Expect Roman Numeral " + expectedValue);
+
+            // 4. Cleanup
+        } 
+
     }
 }
