@@ -48,5 +48,26 @@ namespace NumberSystems
             exerciseAndVerify(1995, "MCMXCV");
         }
 
+        [Fact]
+        [Trait("Type", "Precedence")] 
+        public void FromArabic900ConvertsToRomanNumeralsCM()
+        {
+            exerciseAndVerify(900, "CM");
+        }
+
+        [Fact]
+        [Trait("Type", "Precedence")] 
+        public void FromArabic400ConvertsToRomanNumeralsCD()
+        {
+            exerciseAndVerify(400, "CD");
+        }
+
+        [Fact]
+        [Trait("Type", "Precedence")] 
+        public void FromArabic401ConvertsToRomanNumeralsCDI()
+        {
+            exerciseAndVerify(401, "CDI");
+        }
+
       }
 }

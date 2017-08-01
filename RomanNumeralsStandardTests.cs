@@ -84,13 +84,19 @@ namespace NumberSystems
             exerciseAndVerify(50, "L");
         }
 
-       [Fact]
+        [Fact]
         public void FromArabic100ConvertsToRomanNumeralsC()
         {
             exerciseAndVerify(100, "C");
         }
 
-       [Fact]
+        [Fact]
+        public void FromArabic500ConvertsToRomanNumeralsD()
+        {
+            exerciseAndVerify(500, "D");
+        }
+
+        [Fact]
         public void FromArabic1000ConvertsToRomanNumeralsM()
         {
             exerciseAndVerify(1000, "M");
